@@ -7,7 +7,7 @@
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Portfolio Entry | Sparrow</title>
+	<title>Portfolio Entry </title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -100,19 +100,29 @@
 
                   <div class="entry-description">
 
-                     <p>Using the tool CPSA, this project analyses the TLS 1.3 protocol to find structural faults 
-                        in the protocol.
+                     <p>
+                        Using the Cryptographic Protocol Shapes Analyzer (CPSA), we found the “selfie” attack on TLS 1.3, and we propose and formally verify two mitigations.  
+                        Previously, in 2019, researchers had discovered this reflection attack against the pre-shared key (PSK) mode of authentication, but not using formal-methods tools. 
+                        They discovered a gap in one of the proofs that ignores the case of external PSKs. 
+                        They demonstrated that, in this case, a PSK belongs to at most two parties, but the protocol cannot distinguish which party sent the message. 
+                        We also identify a previously discovered impersonation attack that uses post-handshake authentication, 
+                        which invalidates this approach as a possible mitigation to the selfie attack.
+                        Our work illustrates the strengths and weaknesses of formal-methods tools. 
+                        Although TLS 1.3 has been formally analyzed using the Tamarin, Maude NPA and ProVerif tools, initially researchers missed the selfie attack, perhaps because they did not look for such an attack. 
+                        Previous researchers focused on critical known attacks, such as Logjam, Triple Handshake, or SMACK. 
+                        These analyses did not consider any case where the client uses TLS 1.3 with external PSK to talk to itself for an entire session. 
+                        By contrast, CPSA enumerates all equivalence classes of protocol executions for a given set of assumptions, but requires the user to interpret the graphical output.
                      </p>
 
                   </div>
 
                   <ul class="portfolio-meta-list">
-						   <li><span>Date: </span>May 2020</li>
+						   <li><span>Date: </span>November 2021</li>
 						   <!--<li><span>Client </span>Styleshout</li>-->
 						   <li><span>Skills: </span>Cryptography, CPSA</li>
 				      </ul>
 
-                  <a href="http://behance.net" target="_blank" class="button">View project</a>
+                  <a href="https://www.researchgate.net/publication/356364245_Searching_for_Selfie_in_TLS_13_with_the_Cryptographic_Protocol_Shapes_Analyzer" target="_blank" class="button">Paper</a>
 
             </div> <!-- secondary End-->
 
@@ -120,27 +130,20 @@
 
                <div class="entry-media">
 
-                  <img src="images/portfolio/entries/tls-1.3.png" alt="" />
+                  <img src="/Users/prajnabhandary/Documents/GitHub/Prajbh.github.io/images/tls-1.3.png" alt="" />
 
-                  <img src="images/portfolio/entries/geometric-backgrounds-02.jpg" alt="" />
 
                </div>
 
                <div class="entry-excerpt">
 
-				      <p> Using the tool CPSA, this project analyses the TLS 1.3 protocol to find structural faults 
-                     in the protocol.</p>
+				      <p> Selfie Attack on TLS 1.3</p>
 
 					</div>
 
             </div> <!-- primary end-->
 
          </section> <!-- end section -->
-
-         <ul class="post-nav cf">
-			   <li class="prev"><a href="#" rel="prev"><strong>Previous Entry</strong> Duis Sed Odio Sit Amet Nibh Vulputate</a></li>
-				<li class="next"><a href="#" rel="next"><strong>Next Entry</strong> Morbi Elit Consequat Ipsum</a></li>
-			</ul>
 
       </div>
 
