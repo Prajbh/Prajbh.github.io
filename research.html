@@ -1,193 +1,35 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Portfolio Entry </title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.ico" >
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-   <!-- Header
-   ================================================== -->
-   <header>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <nav id="nav-wrap">
-
-               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-               <ul id="nav" class="nav">
-
-	               <li><a href="index.html">Home</a></li>
-	               <li><span><a href="blog.html">Blog</a></span></li>
-                  <li class="current"><a href="portfolio.html">Portfolio</a></li>
-	               <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-
-               </ul> <!-- end #nav -->
-
-               </ul> <!-- end #nav -->
-
-            </nav> <!-- end #nav-wrap -->
-
-         </div>
-
-      </div>
-
-   </header> <!-- Header End -->
-
-   <!-- Page Title
-   ================================================== -->
-   <div id="page-title">
-
-      <div class="row">
-
-         <div class="ten columns centered text-center">
-            <h1>My Research Work<span>.</span></h1>
-
-            <p> Sneak peak into the world of my area of research! </p>
-         </div>
-
-      </div>
-
-   </div> <!-- Page Title End-->
-
-   <!-- Content
-   ================================================== -->
-   <div class="content-outer">
-
-      <div id="page-content" class="row portfolio">
-
-         <section class="entry cf">
-
-            <div>
-
-                  <h1>Formal method analysis on TLS 1.3 protocol</h1>
-
-                  <div class="entry-description">
-
-                     <p>
-                        Using the Cryptographic Protocol Shapes Analyzer (CPSA), we found the “selfie” attack on TLS 1.3, and we propose and formally verify two mitigation.  
-                        Previously, in 2019, researchers had discovered this reflection attack against the pre-shared key (PSK) mode of authentication, but not using formal-methods tools. 
-                        They discovered a gap in one of the proofs that ignores the case of external PSKs. 
-                        They demonstrated that, in this case, a PSK belongs to at most two parties, but the protocol cannot distinguish which party sent the message. 
-                        We also identify a previously discovered impersonation attack that uses post-handshake authentication, 
-                        which invalidates this approach as a possible mitigation to the selfie attack.
-                        Our work illustrates the strengths and weaknesses of formal-methods tools. 
-                        Although TLS 1.3 has been formally analyzed using the Tamarin, Maude NPA and ProVerif tools, initially researchers missed the selfie attack, perhaps because they did not look for such an attack. 
-                        Previous researchers focused on critical known attacks, such as Logjam, Triple Handshake, or SMACK. 
-                        These analyses did not consider any case where the client uses TLS 1.3 with external PSK to talk to itself for an entire session. 
-                        By contrast, CPSA enumerates all equivalence classes of protocol executions for a given set of assumptions, but requires the user to interpret the graphical output.
-                     </p>
-
-                  </div>
-
-                  <ul class="portfolio-meta-list">
-						   <li><span>Date: </span>November 2021</li>
-						   <!--<li><span>Client </span>Styleshout</li>-->
-						   <li><span>Skills: </span>Cryptography, CPSA</li>
-				      </ul>
-
-                  <a href="https://www.researchgate.net/publication/356364245_Searching_for_Selfie_in_TLS_13_with_the_Cryptographic_Protocol_Shapes_Analyzer" target="_blank" class="button">Paper</a>
-
-                  <a href="https://youtu.be/p8UX_6mkmsg" target="_blank" class="button">Video</a>
-            </div> <!-- secondary End-->
-
-            <div id="primary" class="eight columns">
-
-               <div class="entry-media">
-
-                  <img src="/Users/prajnabhandary/Documents/GitHub/Prajbh.github.io/images/tls-1.3.png" alt="TLS_1.3" />
-
-
-               </div>
-
-
-            </div> <!-- primary end-->
-
-         </section> <!-- end section -->
-
-      </div>
-
-   </div> <!-- content End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-             <ul class="footer-nav">
-					<li><a href="index.html">Home.</a></li>
-              	<li><a href="blog.html">Blog.</a></li>
-              	<li><a href="portfolio-index.html">Portfolio.</a></li>
-              	<li><a href="about.html">About.</a></li>
-              	<li><a href="contact.html">Contact.</a></li>
-               <li><a href="styles.html">Features.</a></li>
-			   </ul>
-
-            <ul class="footer-social">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-
-            <ul class="copyright">
-               <li>Copyright &copy; 2014 Sparrow</li> 
-               <li>Design by <a href="http://www.styleshout.com/" target="_blank">Styleshout</a></li>               
-            </ul>
-
-         </div>
-
-         <div id="go-top" style="display: block;"><a title="Back to Top" href="#">Go To Top</a></div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/doubletaptogo.js"></script>
-   <script src="js/init.js"></script>
-
+        </nav>
+    </header>
+    <main>
+        <h2>My Projects</h2>
+        <ul class="projects-list">
+            <!-- List your projects here -->
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
 </body>
-
 </html>
