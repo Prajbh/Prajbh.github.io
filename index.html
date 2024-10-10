@@ -3,41 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Prajna Bhandary's portfolio site.">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Prajna Bhandary's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav id="nav-wrap" aria-label="Main navigation">
-            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-            <ul id="nav" class="nav">
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Prajna Bhandary</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#journal">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="intro" class="center">
-        <h1>Prajna Bhandary<span>.</span></h1>
-        <p>Hi, I am an engineer and this is my portfolio.</p>
+    <section id="intro" class="container">
+        <h2>About Me</h2>
+        <p>Hi, I am Prajna, an engineer specialized in cybersecurity. Welcome to my professional portfolio.</p>
     </section>
 
-    <section id="works" class="portfolio">
-        <!-- Portfolio items will be here -->
+    <section id="works" class="container">
+        <h2>My Work</h2>
+        <div class="portfolio-items">
+            <!-- Portfolio items go here -->
+        </div>
     </section>
 
-    <section id="journal" class="latest-posts">
-        <!-- Blog entries will be here -->
+    <section id="journal" class="container">
+        <h2>Blog</h2>
+        <div class="blog-entries">
+            <!-- Blog entries go here -->
+        </div>
     </section>
 
-    <footer>
-        <div id="go-top"><a title="Back to Top" href="#">Go To Top</a></div>
-        <p>&copy; 2024 Prajna</p>
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:prajna@example.com">prajna@example.com</a></p>
+    </section>
+
+    <footer class="container">
+        <p>&copy; 2024 Prajna Bhandary</p>
     </footer>
 </body>
 </html>
