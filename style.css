@@ -80,3 +80,18 @@ footer {
     background-size: cover;
     background-position: center;
 }
+
+.photo-paragraph-container {
+    display: flex;
+    align-items: flex-start; /* Align the items at the top */
+    gap: 20px; /* Space between image and text */
+}
+
+.photo-paragraph-container img {
+    max-width: 300px; /* Adjust this as per your needs */
+    height: auto;
+}
+
+.photo-paragraph-container p {
+    flex: 1; /* Ensures the paragraph takes up the remaining space */
+}
