@@ -81,17 +81,27 @@ footer {
     background-position: center;
 }
 
-.photo-paragraph-container {
+/* .photo-paragraph-container {
     display: flex;
     align-items: flex-start; /* Align the items at the top */
-    gap: 20px; /* Space between image and text */
+    /* gap: 20px; /* Space between image and text 
+} */
+
+
+.photo-paragraph-container {
+    display: flex;
+    gap: 20px; /* Space between the columns */
+}
+
+.photo-paragraph-container div {
+    flex: 1; /* Each div takes up equal space */
 }
 
 .photo-paragraph-container img {
-    max-width: 300px; /* Adjust this as per your needs */
+    max-width: 100%; /* Ensure the image fits within the column */
     height: auto;
 }
 
-.photo-paragraph-container p {
-    flex: 1; /* Ensures the paragraph takes up the remaining space */
+.photo-paragraph-container h5 {
+    margin-bottom: 10px; /* Space between heading and content */
 }
