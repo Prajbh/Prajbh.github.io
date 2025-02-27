@@ -109,15 +109,28 @@ footer {
     max-width: 200px; /* Restrict image size */
 }
 
-.photo-img {
-    max-width: 200px; /* Restrict image size */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensures no extra spacing */
-    margin: 0 auto; /* Centers the image */
-}
 
 .paragraph {
     width: 100%; /* Allows text to spread */
     max-width: 600px; /* Adjust as needed */
     text-align: justify; /* Optional: Makes text more readable */
+}
+
+.aboutme-container {
+    display: flex;  /* Enables side-by-side layout */
+    align-items: center;  /* Vertically aligns content */
+    gap: 20px;  /* Space between image and text */
+    max-width: 900px;  /* Restricts width for a clean look */
+    margin: 0 auto;  /* Centers the section */
+}
+
+.photo img {
+    width: 180px;  /* Adjust image size */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;  /* Optional: Soft rounded corners */
+}
+
+.text-container {
+    flex: 1;  /* Makes text take remaining space */
+    max-width: 600px;  /* Prevents text from being too wide */
 }
