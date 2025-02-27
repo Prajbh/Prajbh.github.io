@@ -88,14 +88,6 @@ footer {
 } */
 
 
-.photo-paragraph-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Space between the columns */
-    max-width: 200px; /* Restrict image width */
-    text-align: center; /* Center the image */
-}
-
 .photo-paragraph-container div {
     flex: 1; /* Each div takes up equal space */
 }
@@ -109,3 +101,22 @@ footer {
     margin-bottom: 10px; /* Space between heading and paragraph */
 }
 
+.photo-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers child elements horizontally */
+    gap: 20px;
+}
+
+.photo img {
+    max-width: 200px; /* Restrict image size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures no extra spacing */
+    margin: 0 auto; /* Centers the image */
+}
+
+.paragraph {
+    width: 100%; /* Allows text to spread */
+    max-width: 600px; /* Adjust as needed */
+    text-align: justify; /* Optional: Makes text more readable */
+}
