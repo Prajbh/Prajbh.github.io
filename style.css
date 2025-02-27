@@ -89,7 +89,7 @@ footer {
 
 
 .photo-paragraph-container {
-    /*display: flex;*/
+    display: flex;
     flex-direction: column;
     gap: 20px; /* Space between the columns */
 }
