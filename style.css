@@ -108,7 +108,7 @@ footer {
     gap: 20px;
 }
 
-.photo img {
+.photo-img {
     max-width: 200px; /* Restrict image size */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensures no extra spacing */
