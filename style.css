@@ -92,6 +92,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px; /* Space between the columns */
+    max-width: 200px; /* Restrict image width */
+    text-align: center; /* Center the image */
 }
 
 .photo-paragraph-container div {
