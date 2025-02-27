@@ -41,11 +41,41 @@
                <div id="portfolio-wrapper" class="bgrid-halves cf">
                    
                    <!-- Research Poster 1 -->
-                   <div class="columns portfolio-item first">
+
+                    <div class="columns portfolio-item first">
+                       <div class="item-wrap">
+                           <a href="https://ceur-ws.org/Vol-3920/paper10.pdf" target="_blank">
+                               <img src="images/post.jpg" alt="Research Paper"> 
+                               <div class="overlay"></div>
+                               <div class="link-icon"><i class="fa fa-link"></i></div>
+                           </a>
+                           <div class="portfolio-item-meta">
+                               <h5><a href="posters/CAMLIS_poster_HDBSCAN.png" target="_blank">Ransomware Evolution: Unveiling Patterns Using HDBSCAN</a></h5>
+                               <p>This research presents an innovative approach to enhancing ransomware detection by leveraging Windows
+                                API calls and PE header information to develop precise signatures capable of identifying ransomware families.
+                                Our methodology introduces a novel application of hierarchical clustering using the HDBSCAN algorithm,
+                                in conjunction with the Jaccard similarity metric, to cluster ransomware into discrete families and generate
+                                corresponding signatures. This technique, to our knowledge, marks a pioneering effort in applying hierarchical
+                                density-based clustering to over 1.1 million malicious samples, specifically focusing on ransomware and using
+                                the clusters to automatically generate signatures.
+                                We show that identifying unique Windows API function patterns within these clusters enables the differenti-
+                                ation and characterization of various ransomware families. Furthermore, we conducted a case study focusing
+                                on the distinctive function combinations within prominent ransomware families such as GandCrab, WannaCry,
+                                Cerber, Gotango, and CryptXXX, unveiling unique behaviors and API function usage patterns. Our scalable
+                                implementation demonstrates the ability to efficiently cluster large volumes of malicious files and automatically
+                                generate robust, actionable function signatures for each. Validation of these signatures on an independent
+                                malware dataset yielded a precision rate of 98.34% and specificity rate of 99.72%, affirming their effectiveness
+                                in detecting known ransomware families with minimal error. These findings underscore the potential of our
+                                methodology in bolstering cybersecurity defenses against the evolving landscape of ransomware threats.</p>
+                           </div>
+                       </div>
+                   </div> 
+
+                   <!-- <div class="columns portfolio-item first">
                        <div class="item-wrap">
                            <a href="posters/CAMLIS_poster_HDBSCAN.png" target="_blank">
-                               <!-- <img src="images/post.jpg" alt="Research Poster 1"> -->
-                               <div class="overlay"></div>
+                               <img src="images/post.jpg" alt="Research Poster 1"> -->
+                               <!--<div class="overlay"></div>
                                <div class="link-icon"><i class="fa fa-link"></i></div>
                            </a>
                            <div class="portfolio-item-meta">
@@ -53,7 +83,8 @@
                                <p>Ransomware Research</p>
                            </div>
                        </div>
-                   </div>
+                   </div> -->
+                   
 
                    <!-- Research Poster 2 -->
                    <div class="columns portfolio-item">
