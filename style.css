@@ -117,20 +117,40 @@ footer {
 }
 
 .aboutme-container {
-    display: flex;  /* Enables side-by-side layout */
-    align-items: center;  /* Vertically aligns content */
-    gap: 20px;  /* Space between image and text */
-    max-width: 900px;  /* Restricts width for a clean look */
-    margin: 0 auto;  /* Centers the section */
+    display: flex;  /* Side-by-side layout */
+    align-items: flex-start;  /* Aligns image and text to the top */
+    gap: 30px;  /* Space between image and text */
+    max-width: 900px;  /* Restrict width for clean look */
+    margin: 0 auto;  /* Center section */
+}
+
+.photo {
+    flex: 0 0 200px;  /* Fix image width */
+    display: flex;
+    justify-content: center;
 }
 
 .photo img {
-    width: 180px;  /* Adjust image size */
-    height: auto;  /* Maintain aspect ratio */
-    border-radius: 10px;  /* Optional: Soft rounded corners */
+    width: 100%;  
+    max-width: 180px;  /* Prevents large scaling */
+    height: auto;  
+    border-radius: 10px;  
 }
 
 .text-container {
-    flex: 1;  /* Makes text take remaining space */
-    max-width: 600px;  /* Prevents text from being too wide */
+    flex: 1;  /* Text takes remaining space */
+    display: flex;
+    flex-direction: column;  /* Makes text stack vertically */
+    gap: 20px;  /* Space between Life Goal & Career Interest */
+}
+
+@media (max-width: 768px) {
+    .aboutme-container {
+        flex-direction: column;  /* Stacks everything on small screens */
+        text-align: center;  
+    }
+
+    .photo {
+        margin-bottom: 20px;  /* Adds spacing when stacked */
+    }
 }
