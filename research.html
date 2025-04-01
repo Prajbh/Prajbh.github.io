@@ -67,7 +67,8 @@
                         </div>
                     </div>
                 </div> 
-                
+                <br>
+                <br>               
                    <!-- Research Paper 2 -->
 
                     <div class="columns portfolio-item first">
@@ -98,7 +99,8 @@
                            </div>
                        </div>
                    </div> 
-
+                   <br>
+                   <br>
                    <!-- Research Paper 1 -->
 
                    <div class="columns portfolio-item first">
@@ -117,8 +119,9 @@
                         </div>
                     </div>
                 </div>                    
-
-                   <!-- Research Poster 2 -->
+                <br>
+                <br>
+                   <!-- Research Poster 1 -->
                    <div class="columns portfolio-item">
                        <div class="item-wrap">
                            <a href="posters/MTEM23_Trends_in_malware.pdf" target="_blank">
@@ -128,12 +131,33 @@
                            </a>
                            <div class="portfolio-item-meta">
                                <h5><a href="posters/MTEM23_Trends_in_malware.pdf" target="_blank">Trends in Malware</a></h5>
-                               <p>Machine Learning Research</p>
+                               <p>We propose the use of clustering to analyse similar and differing features between
+                                malware labels of the same family across time. This analysis will allow signature-based
+                                detection methods to check for key differences between existing malware and its variants
+                                and ultimately identify the variants as modifications of a core malware sample.
+                                
+                                The Sophos-ReversingLabs 20 Million dataset(SoReL-20M) is used for this re-
+                                search. [2] The SoReL-20M is a large-scale dataset consisting of nearly 20 million files
+                                
+                                with pre-extracted features, metadata, and scan reports from AV vendors. The SoReL
+                                dataset is balanced, with roughly half of the files malicious and the other half benign.
+                                The AV class scanner is used to identify all samples from a given malware samples.
+                                [3]. We first convert the malware samples to feature vectors in EMBER format. The
+                                vectors are normalized and PCA is used to reduce dimensionality. We calculate the
+                                similarities between the malware samples in a family by calculating the Euclidean
+                                distance between each pair. We then find the minimum spanning tree (MST) of the
+                                similarity matrix. This produces a sequence connecting the most similar malware
+                                samples in the family.
+                                Our primary results showed that the SoReL dataset has major clusters that belonged
+                                to the Trojan malware family. There were clusters that corresponded to the Ransom
+                                Trojan and Downloader Trojan malware families. Our future work includes further
+                                analysis of patterns we might observe in the similarity matrix.</p>
                            </div>
                        </div>
                    </div>
-
-                   <!-- Research Poster 3 -->
+                <br>
+                <br>
+                   <!-- Research Poster 2 -->
                    <div class="columns portfolio-item">
                     <div class="item-wrap">
                         <a href="posters/MTEM22_Malware_Antivirus_Scan_Pattern_Mining_via_Tensor_Decomposition-2.pdf" target="_blank">
@@ -141,28 +165,28 @@
                             <div class="overlay"></div>
                             <div class="link-icon"><i class="fa fa-link"></i></div>
                         </a>
+
+                        <!-- Research Poster 3 -->
                         <div class="portfolio-item-meta">
                             <h5><a href="posters/MTEM22_Malware_Antivirus_Scan_Pattern_Mining_via_Tensor_Decomposition-2.pdf" target="_blank">Malware Antivirus Scan Pattern Mining via Tensor Decomposition</a></h5>
-                            <p>Machine Learning Research</p>
+                            <p> Accurate labeling is important for detecting malware and building reference datasets
+                                which can be used for evaluating machine learning (ML) based malware classification
+                                and clustering approaches. Labels obtained from Anti-Virus (AV) vendors (such as
+                                Kaspersky, Malwarebytes, and McAfee) are one source of information; however, despite
+                                ongoing research efforts there is still inconsistency with the labeling across AV vendors
+                                [7, 5, 9]. AV vendors use differing formats and naming conventions when reporting
+                                labels of malware samples, and the reported labels between any two vendors can
+                                disagree. We address this problem in our work utilizing CP-APR, a powerful tensor
+                                decomposition method for unsupervised ML, to discover the hidden patterns across AV
+                                vendors in the way they report the malware labels. In comparison to the traditional ML
+                                methods, tensor decomposition models the multi-dimensional properties of the data
+                                and produces interpretable results [6]. The higher-dimensional representation of the
+                                AV scans enables the discovery of multi-faceted and complex details of those scans.</p>
                         </div>
                     </div>
                 </div>
-
-
-                   <!-- Research Paper -->
-                   <div class="columns portfolio-item">
-                    <div class="item-wrap">
-                        <a href="https://doi.org/10.1007/978-3-030-91631-2_3" target="_blank">
-                            <!-- <img src="images/poster2-thumbnail.jpg" alt="Research Poster 2"> -->
-                            <div class="overlay"></div>
-                            <div class="link-icon"><i class="fa fa-link"></i></div>
-                        </a>
-                        <div class="portfolio-item-meta">
-                            <h5><a href="https://doi.org/10.1007/978-3-030-91631-2_3" target="_blank">Selfie Attack in TLS 1.3</a></h5>
-                            <p>Machine Learning Research</p>
-                        </div>
-                    </div>
-                </div>
+                <br>
+                <br>
                    
                </div>
             </div> <!-- primary end -->
