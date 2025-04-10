@@ -29,6 +29,11 @@ header nav ul {
     list-style: none;
 }
 
+header nav ul li a:hover {
+    color: #00b4d8;
+    text-decoration: underline;
+}
+
 header nav ul li {
     display: inline;
     margin: 0 10px;
