@@ -43,9 +43,12 @@ section { padding: 56px 0; }
 }
 
 .logo-icon {
-    height: 40px; /* adjust size */
+    height: 1.2em; /* matches text height */
     width: auto;
+    vertical-align: middle;
+    margin-right: 6px;
 }
+
 
 /* Nav */
 .site-header { position: sticky; top: 0; background: rgba(14,17,22,0.7); backdrop-filter: blur(8px); border-bottom: 1px solid #1f2632; }
