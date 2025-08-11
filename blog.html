@@ -1,72 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prajna's Blog</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Prajna Bhandary</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="index.html">Prajna Bhandary</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="Bhandary_Prajna_Resume.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Header (matches site) -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html">Prajna Bhandary</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-menu" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html" aria-current="page">Blog</a></li>
+        <li><a href="Bhandary_Prajna_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="container">
-        <article>
-            <h2>I'm glad my phone had low battery!</h2>
-            <p>August 13, 2022</p>
-            <p>It was the day I was supposed to return back to Baltimore to begin my 5th semester in PhD after having had an amazing opportunity 
-                to work as a cybersecurity specialist intern for IBM CISO. I had charged my phone to 100% before leaving my Airbnb but I perhaps used it
-                too much to spend my 6 hour wait at the airport for the flight which was delayed. I decided I will not use my phone for the three and a half hours journey left 
-                on the flight as I need to save power to book a cab to reach home. There were no charging ports available on this flight. <br>
-                I tried closing my eyes and getting some sleep for the first hour of the flight but then I felt my seat being forcefully pushed forward. I turn back to see what was wrong with the seat to only find a little kid
-                start crying over something he wanted his mother to do for him. I chose to keep quite thinking he will calm down in another 10 minutes like kids normally would. But there was nothing stopping this kid from constantly crying 
-                out loud in a voice frequency that hurt my ear drums. I tried closing my ears tight with my hands but that voice was pretty powerful. The very kind sweet lady sitting who looked like she might have been in her early 60s, sitting beside me on the flight, turned towards
-                and asks "Do you not like kids?". I replied to her saying, "Well, I love kids but not this one!". We both had a chuckle.<br>
-                We then continued our conversation introducing ourselves and quickly found out that we are pretty similar and have many thoughts inn common about things in general. She told me she is currently on a new venture of authoring books. Her first book was published recently
-                titled "You first, me second". I spoke to her about my passion to work in the cybersecurity field and how I would love to try my hand at acting someday because I feel I am talented at that.<br>
-                We spend the next two hours sharing our views on spirituality and humanity. I told her about how as I am being blessed with a comfortable life, I want to share and give back as much as I can as well. She shared how she was able to impact a few lives herself by being able to help others 
-                via her charity. We exchanged emails at the end.<br>
-                It had been long since I had such an meaningful conversation with a stranger. I was very inspired by her life story. There were so many things I was able to learn about life and how I would want to live it. That is something I always try to learn from my conversations with people. I believe 
-                every individual has a unique personality. I always believe two people can be similar but they are never the same. I was so inspired by her that I wanted to immediately go buy her book. We got out of our flight and bid our goodbyes. She had another flight to catch. Later after I reached home a very unexpected thing happened.
-                I had a notification of email on my phone so I opened it up and the words I read gave me a feeling of blissful happiness. A feeling I've perhaps rarely felt reading a email before.<br>
-                The email read "I wanted you to know that our earlier conversation on the plane was a true delight for me as we shared so many common interests!  You are a beautifully gifted young lady with an incredibly dynamic personality! I hope you’ve made it home safely and found your place to be in order!  I’m awaiting my final connecting 
-                flight to get me home but your words of encouragement have given me renewed energy!  Let's stay in touch! " Here is a proof that words are very powerful and generates emotions in a person so you should be very careful with the words you chose to speak. I immediately ordered her book.<br>
-                It took me sometime to finish the book as I had a lot of work going on juggling between things. But I finally finished it. It was a beautiful collection of real stories that the author wanted to share. Each story had a emphasis on how being selfless and helping others helps make this world a very beautiful place to live in.
-                I shared my thoughts on the book to her and she replied back with more encouraging words. Life does tend to get busy at times, I hope I can keep in touch with her in the classic old style of exchanging emails. I maybe now want to try mailing letters to someone someday. It seems fun!  </p>
-</p>
+  <main>
+    <!-- Page title / intro -->
+    <section class="container" style="padding-top: 40px;">
+      <h1 style="margin-bottom:6px;">Blog</h1>
+      <p class="muted">Stories, reflections, and notes along the way.</p>
+    </section>
+
+    <!-- Posts list -->
+    <section class="container" aria-labelledby="posts-list-title">
+      <h2 id="posts-list-title" style="margin-bottom:12px;">Posts</h2>
+
+      <div class="cards" style="grid-template-columns: 1fr; gap: 18px;">
+        <!-- Post 1 -->
+        <article class="card">
+          <header>
+            <h3>I"m glad my phone had low battery!</h3>
+            <p class="muted" style="margin: 0 0 8px;">August 13, 2022</p>
+          </header>
+          <p>
+            It was the day I was supposed to return back to Baltimore to begin my 5th semester in PhD after having had an amazing opportunity to work as a cybersecurity specialist intern for IBM CISO. I had charged my phone to 100% before leaving my Airbnb but I perhaps used it too much to spend my 6 hour wait at the airport for the flight which was delayed. I decided I will not use my phone for the three and a half hours journey left on the flight as I need to save power to book a cab to reach home. There were no charging ports available on this flight.
+          </p>
+          <p>
+            I tried closing my eyes and getting some sleep for the first hour of the flight but then I felt my seat being forcefully pushed forward. I turn back to see what was wrong with the seat to only find a little kid start crying over something he wanted his mother to do for him. I chose to keep quiet thinking he will calm down in another 10 minutes like kids normally would. But there was nothing stopping this kid from constantly crying out loud in a voice frequency that hurt my ear drums. I tried closing my ears tight with my hands but that voice was pretty powerful. The very kind sweet lady sitting who looked like she might have been in her early 60s, sitting beside me on the flight, turned towards and asks "Do you not like kids?" I replied to her saying, "Well, I love kids but not this one!" We both had a chuckle.
+          </p>
+          <p>
+            We then continued our conversation introducing ourselves and quickly found out that we are pretty similar and have many thoughts in common about things in general. She told me she is currently on a new venture of authoring books. Her first book was published recently titled "You first, me second". I spoke to her about my passion to work in the cybersecurity field and how I would love to try my hand at acting someday because I feel I am talented at that.
+          </p>
+          <p>
+            We spent the next two hours sharing our views on spirituality and humanity. I told her about how as I am being blessed with a comfortable life, I want to share and give back as much as I can as well. She shared how she was able to impact a few lives herself by being able to help others via her charity. We exchanged emails at the end.
+          </p>
+          <p>
+            It had been long since I had such a meaningful conversation with a stranger. I was very inspired by her life story. There were so many things I was able to learn about life and how I would want to live it. That is something I always try to learn from my conversations with people. I believe every individual has a unique personality. I always believe two people can be similar but they are never the same. I was so inspired by her that I wanted to immediately go buy her book. We got out of our flight and bid our goodbyes. She had another flight to catch. Later after I reached home a very unexpected thing happened.
+          </p>
+          <p>
+            I had a notification of email on my phone so I opened it up and the words I read gave me a feeling of blissful happiness. A feeling I've perhaps rarely felt reading an email before. The email read "I wanted you to know that our earlier conversation on the plane was a true delight for me as we shared so many common interests! You are a beautifully gifted young lady with an incredibly dynamic personality! I hope you’ve made it home safely and found your place to be in order! I’m awaiting my final connecting flight to get me home but your words of encouragement have given me renewed energy! Let's stay in touch!" Here is a proof that words are very powerful and generate emotions in a person so you should be very careful with the words you choose to speak. I immediately ordered her book.
+          </p>
+          <p>
+            It took me some time to finish the book as I had a lot of work going on juggling between things. But I finally finished it. It was a beautiful collection of real stories that the author wanted to share. Each story had an emphasis on how being selfless and helping others helps make this world a very beautiful place to live in. I shared my thoughts on the book with her and she replied back with more encouraging words. Life does tend to get busy at times, I hope I can keep in touch with her in the classic old style of exchanging emails. I maybe now want to try mailing letters to someone someday. It seems fun!
+          </p>
         </article>
 
-        <!-- Additional blog posts can be added here -->
-        <article>
-            <h2>Master's to PhD</h2>
-            <p>August 10, 2020</p>
-            <p>It just happened! <br>
-                It was a very unprecedented time when there was a high possibility that all companies might have to go remote for a few more months. There was a 
-                hiring freeze in most companies and lay-offs in others. Tough time for all students. I always wanted to do PhD so I took my chance and asked my advisor 
-                about the possibility of me coming back to the university maybe after two years of experience for a PhD degree. He advised me to apply for PhD right away if I wish 
-                to do one. He advised me if I wanted to really do PhD then why not do it right away and continue my studies. <br>
-                After thinking for sometime, I decided that given the current situation in the job market, I might as well take up PhD right now.<br>
-                And so it just happened because I was in the right place at the right time!
-</p>
-            </article>
-    </main>
+        <!-- Post 2 -->
+        <article class="card">
+          <header>
+            <h3>Master's to PhD</h3>
+            <p class="muted" style="margin: 0 0 8px;">August 10, 2020</p>
+          </header>
+          <p>
+            It just happened! It was a very unprecedented time when there was a high possibility that all companies might have to go remote for a few more months. There was a hiring freeze in most companies and lay-offs in others—tough time for all students. I always wanted to do a PhD, so I took my chance and asked my advisor about the possibility of me coming back to the university maybe after two years of experience for a PhD degree. He advised me to apply for a PhD right away if I wished to do one.
+          </p>
+          <p>
+            After thinking for some time, I decided that given the current situation in the job market, I might as well take up the PhD right now. And so it just happened because I was in the right place at the right time!
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Prajna Bhandary. All rights reserved.</p>
-        </div>
-    </footer>
+  <footer class="site-footer container">
+    <p>© 2025 Prajna Bhandary</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('open');
+      });
+    }
+  </script>
 </body>
 </html>
