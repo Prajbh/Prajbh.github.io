@@ -34,6 +34,18 @@ section { padding: 56px 0; }
     font-size: 1.5rem;
     font-weight: bold;
 }
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between icon and name */
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-icon {
+    height: 40px; /* adjust size */
+    width: auto;
+}
 
 /* Nav */
 .site-header { position: sticky; top: 0; background: rgba(14,17,22,0.7); backdrop-filter: blur(8px); border-bottom: 1px solid #1f2632; }
