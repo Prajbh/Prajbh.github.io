@@ -1,155 +1,148 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Prajna Bhandary's Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-      <header>
-          <div id="slider">
-              <div class="slides">
-                  <div class="slide" style="background-image: url('images/crater_lake_full.png');"></div>
-                  <div class="slide" style="background-image: url('images/crater_lake_full.png');"></div>
-              </div>
-          </div>
-          <nav>
-                <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="research.html">Research</a></li>
-                   <li><a href="projects.html">Projects</a></li>
-                   <li><a href="blog.html">Blog</a></li>
-                   <li><a href="Bhandary_Prajna_Resume.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header> -->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Prajna Bhandary's Portfolio</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    
-    <body>
-        <!-- ===== Header with Image Slider ===== -->
-        <header>
-            <div id="slider">
-                <div class="slides">
-                    <div class="slide" style="background-image: url('images/crater_lake_full.png');"></div>
-                    <div class="slide" style="background-image: url('images/background_img_front.jpeg');"></div>
-                </div>
-            </div>
-    
-            <!-- ===== Navigation Menu ===== -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="Bhandary_Prajna_Resume.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prajna Bhandary — Cybersecurity Researcher</title>
+  <!-- Keep using your existing stylesheet; class names below are simple/semantic -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optional: you can import a font in style.css instead -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html">Prajna Bhandary</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-menu" class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Bhandary_Prajna_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="intro" class="container">
-        <h1>Hi, I'm Prajna, an engineer specializing in cybersecurity. 
-            <br>
-            Welcome to my professional portfolio (or maybe not so professional!).</h1>
-    </section>
-    <br>
-    <br>
-    <section id="aboutme" class="container"> 
-        <h2>About Me</h2> 
-        <br>
-        <br>
-        <div class="aboutme-container">
-            <!-- Image on the Side -->
-            <div class="photo">
-                <img src="images/Prajna_photo.jpg" alt="Personal photo">
-            </div>
-         <div class="text-container">
-            <div>
-            <h4> Life Goal</h4>  
-            <br>
-        <p> My name reflects both "wisdom" and the "knowledge of nothingness", which speaks to my 
-        lifelong pursuit of understanding the world while embracing the endless possibilities of the unknown - both in life and in the realm of cybersecurity threats.</p> 
+  <!-- HERO -->
+  <section class="hero container" id="hero">
+    <div class="hero-content">
+      <h1>Cybersecurity Researcher · AI Safety Advocate</h1>
+      <p>I analyze ransomware behavior in Active Directory and build ML‑driven detection and summarization methods. My work focuses on behavior chains, event sequences, and robust signatures.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="research.html">View Research</a>
+        <a class="btn" href="projects.html">See Projects</a>
+      </div>
     </div>
-    <div>
-        <h4> Career Interest</h4>  
-        <br>
-        <p>Currently, I am pursuing my PhD in 
-            Computer Science at the University of Maryland, Baltimore County (UMBC), with a focus on cybersecurity, machine learning, and artificial intelligence. 
-            My growing expertise lies in the cybersecurity domain, where I have conducted research in cryptography, malware analysis, and AI-driven solutions. 
-            Each day, I strive to deepen my knowledge and contribute to innovations in these fields.</p> 
-        </div>
-        <div>
-            <h4>Work Experience</h4>  <br>
-            <p>With nearly six years of experience as a Teaching Assistant, 
-                I’ve had the opportunity to instruct courses such as Introduction to Machine Learning, Computer Networks, Software Reverse Engineering, 
-                Artificial Intelligence, and more. This role has honed my ability to break down complex concepts and share my passion for computer science. 
-                Alongside my academic experience, I have four years of professional industry experience, having worked with the CISO team at IBM, the Projects 
-                Automation team at Navy Federal Credit Union, and as a Threat Intelligence Researcher for Cybercrime at Palo Alto Networks.</p> 
-            </div>
-            <div>   
-                <h4> Life Mantra</h4>  
-                <br>
-                <p>I am driven by an insatiable curiosity and a hunger for knowledge — never content with mastering just one field. While I embrace the 
-                    “jack of all trades” mentality, I continually strive to refine my skills across diverse domains, ensuring I can offer the very best in whatever I do.</p> </section>
-                </div> 
-    <!-- <section id="journal" class="container">
-        <h2>Blog</h2>
-        <div class="blog-entries">
-             Blog entries go here -->
-        <!-- </div>
-    </section> --> 
-</div>
-</div>
-    <br>
-    <br>
-
-    <section id="affiliations">
-    <h2>Professional Affiliations</h2>
-    <div class="affiliation">
-        <img src="images/wicys_logo.png" alt="WiCyS Logo" class="affiliation-logo">
-        <p>Member of <strong>Women in CyberSecurity (WiCyS)</strong>, supporting and advancing women in the field through networking, mentorship, and technical exchange.</p>
+    <!-- Optional hero image; swap the src or remove the img entirely -->
+    <div class="hero-media">
+      <!-- TODO: replace with a banner or keep empty for a clean look -->
+      <img src="images/crater_lake_full.png" alt="Banner image" loading="lazy">
     </div>
-    <div class="affiliation">
-        <img src="images/align_logo.png" alt="Align-Sec Logo" class="affiliation-logo">
-        <p>Board Member of <strong>Align-Sec</strong>, a global community advancing safe and ethical AI use in cybersecurity.</p>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="highlights container" id="highlights" aria-labelledby="highlights-title">
+    <h2 id="highlights-title">Highlights</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Research</h3>
+        <p>Behavioral signatures for ransomware in AD; clustering and outlier analysis.</p>
+        <a class="card-link" href="research.html" aria-label="Go to Research page">Explore research →</a>
+      </article>
+      <article class="card">
+        <h3>Projects</h3>
+        <p>Proxmox automation, PowerShell pipelines, and sequence mining on Windows logs.</p>
+        <a class="card-link" href="projects.html" aria-label="Go to Projects page">See projects →</a>
+      </article>
+      <article class="card">
+        <h3>Blog</h3>
+        <p>Short notes on experiments, ML tips, and workflow tooling.</p>
+        <a class="card-link" href="blog.html" aria-label="Go to Blog page">Read the blog →</a>
+      </article>
     </div>
-</section>
+  </section>
 
-<br>
-    <section id="hobbies" class="container">
-        <h2>Beyond the Code: My Hobbies</h2>
-        <div>
-            <p>When I'm not diving into the world of cybersecurity or exploring new tech frontiers, you'll probably find me immersed in something just as exciting.</p>
-            
-            <p>Whether it's mastering stealth in <em>Assassin’s Creed</em> on my PS5 or getting lost in the beauty of nature while hiking, I'm always up for a new adventure. Cooking up a storm in the kitchen, binge-watching the latest TV shows, or jamming out to my favorite music are my go-to ways to unwind.</p>
-            
-            <p>Art in all its forms fascinates me. I love learning about different art styles, getting inspired by creative expression, and even hitting the dance floor when the rhythm calls for it. Life, after all, is about balance—and I make sure to find mine between tech, art, and a bit of adventure.</p>
-        </div>
-    </section>
-    
-    <br>
-    <br>
-    <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <br>
-        <br>
-        <p>LinkedIn:<a href="https://www.linkedin.com/in/pjbhandary/"> https://www.linkedin.com/in/pjbhandary/</a> </p>
-        <p>Email: <a href="mailto:prajna@example.com">prajnab1@umbc.com</a></p>
-    </section>
+  <!-- AFFILIATIONS STRIP -->
+  <section class="affiliations container" id="affiliations" aria-labelledby="affiliations-title">
+    <h2 id="affiliations-title">Professional Affiliations</h2>
+    <ul class="affiliation-list">
+      <li class="affiliation-item">
+        <a href="https://www.wicys.org" target="_blank" rel="noopener">
+          <img src="images/wicys_logo.png" alt="Women in CyberSecurity (WiCyS)" class="affiliation-logo" loading="lazy">
+        </a>
+        <p>Member, Women in CyberSecurity (WiCyS)</p>
+      </li>
+      <li class="affiliation-item">
+        <a href="https://align-sec.org" target="_blank" rel="noopener">
+          <img src="images/align_logo.png" alt="Align-Sec" class="affiliation-logo" loading="lazy">
+        </a>
+        <p>Board Member, Align-Sec</p>
+      </li>
+    </ul>
+  </section>
 
-    <footer class="container">
-        <p>&copy; 2024 Prajna Bhandary</p>
-    </footer>
-    
-<script src="script.js"></script>
+  <!-- ABOUT SNAPSHOT -->
+  <section class="about container" id="about" aria-labelledby="about-title">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 id="about-title">About</h2>
+        <p>I’m a CS Ph.D. candidate at UMBC researching ransomware detection in Active Directory with behavior‑based analysis and machine learning. I’ve taught ML, Networks, Reverse Engineering, and AI for ~6 years, and worked with IBM’s CISO team, Navy Federal (Automation), and Palo Alto Networks (Threat Intel). I care about practical security and explainable methods.</p>
+      </div>
+      <div class="about-photo">
+        <img src="images/Prajna_photo.jpg" alt="Portrait of Prajna Bhandary" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED / RECENT (optional) -->
+  <!--
+  <section class="featured container" id="featured" aria-labelledby="featured-title">
+    <h2 id="featured-title">Featured</h2>
+    <article class="feature">
+      <h3>Behavior Chains in Ransomware (Short Note)</h3>
+      <p>How I use event sequences and time windows to create robust behavioral signatures.</p>
+      <a class="feature-link" href="blog.html">Read more →</a>
+    </article>
+  </section>
+  -->
+
+  <!-- CONTACT -->
+  <section class="contact container" id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact</h2>
+    <ul class="contact-list">
+      <li>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/pjbhandary/" target="_blank" rel="noopener">linkedin.com/in/pjbhandary</a>
+      </li>
+      <li>
+        <strong>Email:</strong>
+        <!-- TODO: confirm your preferred address; using umbc.edu by default -->
+        <a href="mailto:prajnab1@umbc.edu">prajnab1@umbc.edu</a>
+      </li>
+      <li>
+        <a class="btn" href="Bhandary_Prajna_Resume.pdf" target="_blank" rel="noopener">Download CV</a>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="site-footer container">
+    <p>© 2025 Prajna Bhandary</p>
+  </footer>
+
+  <!-- Minimal JS to support mobile nav toggle; optional if your CSS handles it -->
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('open');
+      });
+    }
+  </script>
 </body>
 </html>
