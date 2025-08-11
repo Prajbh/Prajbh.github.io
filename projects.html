@@ -1,146 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Prajna Bhandary</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Prajna Bhandary</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="index.html">Prajna Bhandary</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="Bhandary_Prajna_Resume.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Header (matches index) -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html">Prajna Bhandary</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-menu" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Bhandary_Prajna_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="container">
-        <section id="page-title">
-            <div class="row">
-                <div class="ten columns centered text-center">
-                    <h2>My Projects</h2>
-                    <p>Check out some cool project ideas I've worked on.</p>
-                </div>
-            </div>
-        </section>
-        <section class="entry cf">
+  <main>
+    <!-- Page title -->
+    <section class="container" style="padding-top: 40px;">
+      <h1 style="margin-bottom:6px;">My Projects</h1>
+      <p class="muted">Some course projects, personal explorations, and experiments I’ve worked on.</p>
+    </section>
 
-            <div id="secondary"  class="four columns entry-details">
+    <!-- Project list -->
+    <section class="container" aria-labelledby="projects-list-title">
+      <h2 id="projects-list-title" style="margin-bottom:12px;">Projects</h2>
 
-               <p class="lead">Listed are some of the projects I worked as a part of a course I took during
-                  my Master's or Bachelor's degree and some ideas I worked on with my own interest.
-               </p>
+      <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px;">
+        <!-- Mastermind -->
+        <article class="card">
+          <h3><a class="card-link" href="https://github.com/Prajbh/Mastermind" target="_blank" rel="noopener">Mastermind</a></h3>
+          <p>Android app implementation of the classic Mastermind game.</p>
+        </article>
 
-            </div> <!-- Secondary End-->
+        <!-- Search Engine -->
+        <article class="card">
+          <h3><a class="card-link" href="https://github.com/Prajbh/searchengine" target="_blank" rel="noopener">Search Engine</a></h3>
+          <p>Information retrieval project focusing on building a search engine from scratch.</p>
+        </article>
 
-            <div id="primary" class="eight columns portfolio-list">
+        <!-- CTF Challenge -->
+        <article class="card">
+          <h3><a class="card-link" href="https://github.com/Prajbh/pythoncode" target="_blank" rel="noopener">CTF Challenge</a></h3>
+          <p>Write-up and solutions for a Capture The Flag (CTF) cybersecurity challenge.</p>
+        </article>
 
-               <div id="portfolio-wrapper" class="bgrid-halves cf">
+        <!-- Fast Food Restaurants -->
+        <article class="card">
+          <h3><a class="card-link" href="https://github.com/Prajbh/Fast_Food_Restaurants_Data" target="_blank" rel="noopener">Fast Food Restaurants</a></h3>
+          <p>Data science project analyzing datasets of fast food restaurant locations and attributes.</p>
+        </article>
 
-          		   <div class="columns portfolio-item first">
-                     <div class="item-wrap">
-          				   <a href="https://github.com/Prajbh/Mastermind">
-                           <!-- <img alt="" src="images/portfolio/geometrics.jpg"> -->
-                           <div class="overlay"></div>
-                           <div class="link-icon"><i class="fa fa-link"></i></div>
-                        </a>
-          					<div class="portfolio-item-meta">
-          					   <h5><a href="https://github.com/Prajbh/Mastermind">Mastermind</a></h5>
-                           <p>Android App</p>
-          					</div>
-                     </div>
-          			</div>
+        <!-- S-DES -->
+        <article class="card">
+          <h3><a class="card-link" href="https://github.com/Prajbh/S-DES" target="_blank" rel="noopener">S‑DES</a></h3>
+          <p>Python implementation of the Simplified Data Encryption Standard.</p>
+        </article>
 
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-          				   <a href="https://github.com/Prajbh/searchengine">
-                           <!-- <img alt="" src="images/portfolio/console.jpg"> -->
-                           <div class="overlay"></div>
-                           <div class="link-icon"><i class="fa fa-link"></i></div>
-                        </a>
-          					<div class="portfolio-item-meta">
-          					   <h5><a href="https://github.com/Prajbh/searchengine">Search Engine</a></h5>
-                           <p>Information Retreival</p>
-          					</div>
-                     </div>
-          			</div>
+        <!-- PAA-in-MCC -->
+        <article class="card">
+          <h3><a class="card-link" href="https://github.com/Prajbh/PAA-in-MCC" target="_blank" rel="noopener">PAA-in-MCC</a></h3>
+          <p>Java code implementation for a Pattern Approximation Algorithm in MCC context.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-                  <div class="columns portfolio-item first">
-                     <div class="item-wrap">
-          				   <a href="https://github.com/Prajbh/pythoncode">
-                           <!-- <img alt="" src="images/portfolio/camera-man.jpg"> -->
-                           <div class="overlay"></div>
-                           <div class="link-icon"><i class="fa fa-link"></i></div>
-                        </a>
-          					<div class="portfolio-item-meta">
-          					   <h5><a href="https://github.com/Prajbh/pythoncode">CTF Challenge</a></h5>
-                           <p>Write up for the challenge</p>
-          					</div>
-                     </div>
-          			</div>
+  <footer class="site-footer container">
+    <p>© 2025 Prajna Bhandary</p>
+  </footer>
 
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-          				   <a href="https://github.com/Prajbh/Fast_Food_Restaurants_Data">
-                           <!-- <img alt="" src="images/portfolio/into-the-light.jpg"> -->
-                           <div class="overlay"></div>
-                           <div class="link-icon"><i class="fa fa-link"></i></div>
-                        </a>
-          					<div class="portfolio-item-meta">
-          					   <h5><a href="https://github.com/Prajbh/Fast_Food_Restaurants_Data">Fast Food Restaurants</a></h5>
-                           <p>Data Science</p>
-          					</div>
-                     </div>
-          			</div>
-
-                  <div class="columns portfolio-item first">
-                     <div class="item-wrap">
-          				   <a href="https://github.com/Prajbh/S-DES">
-                           <!-- <img alt="" src="images/portfolio/farmerboy.jpg"> -->
-                           <div class="overlay"></div>
-                           <div class="link-icon"><i class="fa fa-link"></i></div>
-                        </a>
-          					<div class="portfolio-item-meta">
-          					   <h5><a href="https://github.com/Prajbh/S-DES">S-DES</a></h5>
-                           <p>Python Code</p>
-          					</div>
-                     </div>
-          			</div>
-
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-          				   <a href="https://github.com/Prajbh/PAA-in-MCC">
-                           <!-- <img alt="" src="images/portfolio/coffee-cup.jpg"> -->
-                           <div class="overlay"></div>
-                           <div class="link-icon"><i class="fa fa-link"></i></div>
-                        </a>
-          					<div class="portfolio-item-meta">
-          					   <h5><a href="https://github.com/Prajbh/PAA-in-MCC">PAA-in-MCC/a></h5>
-                           <p>Java Code</p>
-          					</div>
-                     </div>
-          			</div>
-
-               </div>
-
-            </div> <!-- primary end-->
-
-         </section> <!-- end section -->
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Prajna Bhandary. All rights reserved.</p>
-        </div>
-    </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('open');
+      });
+    }
+  </script>
 </body>
 </html>
