@@ -49,6 +49,20 @@ section { padding: 56px 0; }
     margin-right: 6px;
 }
 
+.vertical-nav {
+    list-style-type: disc; /* bullet points */
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.vertical-nav li {
+    margin: 4px 0;
+}
+
+.vertical-nav a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* Nav */
 .site-header { position: sticky; top: 0; background: rgba(14,17,22,0.7); backdrop-filter: blur(8px); border-bottom: 1px solid #1f2632; }
