@@ -22,6 +22,19 @@ body {
 .container { width: min(1100px, 90%); margin-inline: auto; }
 section { padding: 56px 0; }
 
+.site-logo {
+    height: 40px; /* adjust as needed */
+    width: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.site-name {
+    vertical-align: middle;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 /* Nav */
 .site-header { position: sticky; top: 0; background: rgba(14,17,22,0.7); backdrop-filter: blur(8px); border-bottom: 1px solid #1f2632; }
 .nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; }
