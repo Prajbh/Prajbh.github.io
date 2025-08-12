@@ -51,10 +51,10 @@ section { padding: 56px 0; }
 
 /* Logo icon next to name */
 .logo-icon {
-    height: 1.5em;
+    height: 1.2em;
     width: auto;
     vertical-align: middle;
-    margin-right: 8px;
+    margin-right: 6px;
 }
 
 /* Remove bullet points, align nav links horizontally */
@@ -74,6 +74,7 @@ section { padding: 56px 0; }
 .horizontal-nav li a:hover {
     text-decoration: underline;
 }
+
 
 
 /* Nav */
