@@ -42,7 +42,66 @@ section { padding: 56px 0; }
     color: inherit;
 }
 
-/* Flex container for logo+name and nav */
+/* Make header content sit on one row */
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* or flex-start if you want all left-aligned */
+  gap: 24px;
+  padding: 12px 0;
+}
+
+/* Tighten the title and align icon with text */
+header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+header h1 a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Your logo sizing */
+.logo-icon {
+  height: 1.5em; /* scales with text */
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Horizontal nav */
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+header nav ul a {
+  text-decoration: none;
+  color: var(--muted);
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+header nav ul a:hover,
+header nav ul a[aria-current="page"] {
+  color: var(--text);
+  background: #1a2130;
+}
+
+/* Mobile: stack neatly */
+@media (max-width: 720px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+
+/* Flex container for logo+name and nav
 .header-flex {
     display: flex;
     justify-content: space-between;
@@ -50,7 +109,7 @@ section { padding: 56px 0; }
 }
 
 /* Logo icon next to name */
-.logo-icon {
+/* .logo-icon {
     height: 1.2em;
     width: auto;
     vertical-align: middle;
@@ -58,11 +117,11 @@ section { padding: 56px 0; }
 }
 
 /* Remove bullet points, align nav links horizontally */
-.horizontal-nav {
+/* .horizontal-nav {
     list-style: none;
     display: flex;
     gap: 1.5rem; /* space between links */
-    margin: 0;
+    /* margin: 0;
     padding: 0;
 }
 
@@ -73,7 +132,7 @@ section { padding: 56px 0; }
 
 .horizontal-nav li a:hover {
     text-decoration: underline;
-}
+}   */ 
 
 
 
