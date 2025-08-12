@@ -100,6 +100,25 @@ header nav ul a[aria-current="page"] {
   }
 }
 
+/* Featured card ribbon */
+.featured-card {
+  position: relative;
+  border: 2px solid var(--brand);
+}
+
+.featured-badge {
+  position: absolute;
+  top: 12px;
+  right: -16px;
+  background: var(--brand);
+  color: #04121c;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transform: rotate(10deg);
+  box-shadow: var(--shadow);
+}
 
 /* Flex container for logo+name and nav
 .header-flex {
