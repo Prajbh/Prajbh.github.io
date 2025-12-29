@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,311 +32,299 @@
             </div>
         </section>
 
-        <section class="entry cf">
-            <div id="secondary" class="four columns entry-details">
-               <p class="lead">Here are some of the research posters I have presented in various conferences and research symposiums. Click on the posters to view them in full size or download the PDF version.</p>
+        <!-- =========================
+             CSS-only Tabs (NO JS)
+        ========================== -->
+        <section class="tabs" aria-label="Research sections">
+
+            <!-- Radio controls -->
+            <input type="radio" name="research-tabs" id="tab-publications" checked>
+            <input type="radio" name="research-tabs" id="tab-talks">
+
+            <!-- Tab labels -->
+            <div class="tablist">
+                <label for="tab-publications" class="tab-button">Publications & Posters</label>
+                <label for="tab-talks" class="tab-button">Talks & Workshops</label>
             </div>
 
-            <div id="primary" class="eight columns portfolio-list">
-               <div id="portfolio-wrapper" class="bgrid-halves cf">
-
-                    <!-- Research Paper 6 -->
-
-                    <div class="columns portfolio-item first">
-                       <div class="item-wrap">
-                           <!-- <a href="https://ceur-ws.org/Vol-3920/paper10.pdf" target="_blank"> -->
-                               <!-- <img src="images/post.jpg" alt="Research Paper"> 
-                               <div class="overlay"></div>
-                               <div class="link-icon"><i class="fa fa-link"></i></div>
-                           </a> -->
-                           <div class="portfolio-item-meta">
-                               <h5><a href="https://conferences.computer.org/acsacpub25/pdfs/ACSACW2025-1bIy0fj3zhdiLigxu9UCLW/453600a051/453600a051.pdf" target="_blank">Ransomware in Active Directory: A Dataset and Analysis of Early-Stage Behavior</a></h5>
-                               <p>Early-stage ransomware investigations often hinge on the first minutes after execution, yet most empirical studies aggregate multi-hour traces or analyze single hosts in isolation. This paper presents a reproducible dataset and an analysis of ransomware behavior in Active Directory (AD) environments during these critical stages. Using a controlled AD testbed, we executed over one hundred samples from eight families -
-                                Akira, BlackMatter, BlackCat, Black Basta, Conti, DarkSide, LockBit and MedusaLocker, and collected approximately 341,000 labeled Windows Event Log entries across both victim and server (Domain Controller) roles.</p>
-                           </div>
-                       </div>
-                   </div> 
-                   <br>
-                   <br>
-
-                   <!-- Research Paper 5 -->
-
-                    <div class="columns portfolio-item first">
-                       <div class="item-wrap">
-                           <!-- <a href="https://ceur-ws.org/Vol-3920/paper10.pdf" target="_blank"> -->
-                               <!-- <img src="images/post.jpg" alt="Research Paper"> 
-                               <div class="overlay"></div>
-                               <div class="link-icon"><i class="fa fa-link"></i></div>
-                           </a> -->
-                           <div class="portfolio-item-meta">
-                               <h5><a href="https://arxiv.org/abs/2512.00741" target="_blank">Analyzing the Impact of Outliers in Malware Clustering</a></h5>
-                               <p>
-                                In malware clustering, outliers may be found while dismissed as noise, while they may in fact represent emerging threats, mislabeled samples, or structurally unique binaries.
-                                In this study, we systematically analyze the nature of outliers produced by two threat intelligence analytics, namely K-Means Least Trimmed Squares (LTS) and HDBSCAN, across two datasets: MOTIF, a small, well-labeled malware dataset, 
-                                and a subset (ransomware samples only) of SOREL-20M, a larger, noisier malware corpus. For reasons we will explain, clustering is performed using only DLL imports as feature vectors. Antivirus (AV) labels are used post hoc to help characterize and interpret outliers.
-                                Our results show that outliers help reveal novel or mislabeled threats. Using MOTIF, HDBSCAN flagged 61.5\% of the samples as noise, while K-Means LTS flagged only 9.9\%. Using SOREL, both methods flagged fewer relative outliers, but still revealed distinct patterns. An analysis of function counts and malware families revealed that outliers often contain either unusually sparse or overly dense API usage. The overlap between K-Means LTS and HDBSCAN outliers remained modest, highlighting the value of combining approaches.
-                                This work contributes a structured methodology to analyze clustering outliers in malware datasets and demonstrates their potential utility for malware triage, variant discovery, and optimization of the detection pipeline. 
-                                The results demonstrate how unsupervised clustering outputs can augment threat hunting and Cyber Threat Intelligence (CTI) worksflows.
-
-                               </p>
-                   <br>
-                   <br>
-
-                   <!-- Research Paper 4 -->
-
-                    <div class="columns portfolio-item first">
-                       <div class="item-wrap">
-                           <!-- <a href="https://ceur-ws.org/Vol-3920/paper10.pdf" target="_blank"> -->
-                               <!-- <img src="images/post.jpg" alt="Research Paper"> 
-                               <div class="overlay"></div>
-                               <div class="link-icon"><i class="fa fa-link"></i></div>
-                           </a> -->
-                           <div class="portfolio-item-meta">
-                               <h5><a href="https://arxiv.org/abs/2512.00741" target="_blank">MASCOT: Analyzing Malware Evolution Through A Well-Curated Source Code Dataset</a></h5>
-                               <p>In recent years, the explosion of malware and extensive code reuse have formed complex evolutionary connections among malware specimens. The rapid pace of development makes it challenging for existing studies to characterize recent evolutionary trends. 
-                                In addition, intuitive tools to untangle these intricate connections between malware specimens or 
-                                categories are urgently needed. This paper introduces a manually-reviewed malware source code dataset containing 6032 specimens. Building on and extending current research from a software engineering perspective, we systematically evaluate the scale, 
-                                development costs, code quality, as well as security and dependencies of modern malware. We further introduce a multi-view genealogy analysis to clarify malware connections: at an overall view, this analysis quantifies the strength and direction of connections 
-                                among specimens and categories; at a detailed view, it traces the evolutionary histories of individual specimens. Experimental results indicate that, despite persistent shortcomings in code quality, malware specimens exhibit an increasing complexity and standardization, in step with the development of mainstream software engineering practices. Meanwhile, our genealogy analysis intuitively reveals lineage expansion and evolution driven by code reuse, providing new evidence and tools for understanding the formation and evolution of the malware ecosystem.</p>
-                       </div>
-                   </div> 
-                   <br>
-                   <br>
-                   
-        
-
-                   <!-- Research Paper 3 -->
-
-                   <div class="columns portfolio-item first">
-                    <div class="item-wrap">
-                        <!-- <a href="https://ceur-ws.org/Vol-3920/paper10.pdf" target="_blank"> -->
-                            <!-- <img src="images/post.jpg" alt="Research Paper"> 
-                            <div class="overlay"></div>
-                            <div class="link-icon"><i class="fa fa-link"></i></div>
-                        </a> -->
-                        <div class="portfolio-item-meta">
-                            <h5><a href="https://ieeexplore.ieee.org/abstract/document/11012104" target="_blank">A Behavioral Analysis of Ransomware in Active Directory: A Case Study of BlackMatter, Conti, LockBit, and Midnight.</a></h5>
-                            <p>Ransomware continues to be a pervasive cybersecurity threat, particularly in enterprise environments that leverage Active Directory (AD) for centralized management.
-                                This study focuses on analyzing ransomware behavior by examining Windows Event Logs generated during attacks from four prominent ransomware families: “BlackMatter,” “Conti,”, “LockBit,” and “Midnight”1. We conducted experiments on 20
-                                ransomware samples (5 per family) within a controlled Proxmox-
-                                based virtual AD environment to simulate realistic enterprise
-                                conditions. Our analysis applies n-gram sequence modeling and
-                                behavioral feature extraction to uncover distinctive event patterns
-                                and attack paths. The findings reveal consistent, family-specific
-                                behavioral sequences, such as repetitive service control and
-                                credential validation events, that are indicative of ransomware
-                                activity. In addition to offering insight into the operational
-                                methods of ransomware, we lay the groundwork for automated
-                                behavior-based detection mechanisms suited for enterprise AD
-                                environments.</p>
-                        </div>
+            <!-- =========================
+                 TAB 1: Publications & Posters
+                 (Your existing section, unchanged)
+            ========================== -->
+            <div class="tab-panel panel-publications">
+                <section class="entry cf">
+                    <div id="secondary" class="four columns entry-details">
+                       <p class="lead">Here are some of the research posters I have presented in various conferences and research symposiums. Click on the posters to view them in full size or download the PDF version.</p>
                     </div>
-                </div> 
-                <br>
-                <br>               
-                   <!-- Research Paper 2 -->
 
-                    <div class="columns portfolio-item first">
-                       <div class="item-wrap">
-                           <!-- <a href="https://ceur-ws.org/Vol-3920/paper10.pdf" target="_blank"> -->
-                               <!-- <img src="images/post.jpg" alt="Research Paper"> 
-                               <div class="overlay"></div>
-                               <div class="link-icon"><i class="fa fa-link"></i></div>
-                           </a> -->
-                           <div class="portfolio-item-meta">
-                               <h5><a href="https://ceur-ws.org/Vol-3920/paper10.pdf" target="_blank">Ransomware Evolution: Unveiling Patterns Using HDBSCAN</a></h5>
-                               <p>This research presents an innovative approach to enhancing ransomware detection by leveraging Windows
-                                API calls and PE header information to develop precise signatures capable of identifying ransomware families.
-                                Our methodology introduces a novel application of hierarchical clustering using the HDBSCAN algorithm,
-                                in conjunction with the Jaccard similarity metric, to cluster ransomware into discrete families and generate
-                                corresponding signatures. This technique, to our knowledge, marks a pioneering effort in applying hierarchical
-                                density-based clustering to over 1.1 million malicious samples, specifically focusing on ransomware and using
-                                the clusters to automatically generate signatures.
-                                We show that identifying unique Windows API function patterns within these clusters enables the differenti-
-                                ation and characterization of various ransomware families. Furthermore, we conducted a case study focusing
-                                on the distinctive function combinations within prominent ransomware families such as GandCrab, WannaCry,
-                                Cerber, Gotango, and CryptXXX, unveiling unique behaviors and API function usage patterns. Our scalable
-                                implementation demonstrates the ability to efficiently cluster large volumes of malicious files and automatically
-                                generate robust, actionable function signatures for each. Validation of these signatures on an independent
-                                malware dataset yielded a precision rate of 98.34% and specificity rate of 99.72%, affirming their effectiveness
-                                in detecting known ransomware families with minimal error. These findings underscore the potential of our
-                                methodology in bolstering cybersecurity defenses against the evolving landscape of ransomware threats.</p>
+                    <div id="primary" class="eight columns portfolio-list">
+                       <div id="portfolio-wrapper" class="bgrid-halves cf">
+
+                            <!-- Research Paper 6 -->
+
+                            <div class="columns portfolio-item first">
+                               <div class="item-wrap">
+                                   <div class="portfolio-item-meta">
+                                       <h5><a href="https://conferences.computer.org/acsacpub25/pdfs/ACSACW2025-1bIy0fj3zhdiLigxu9UCLW/453600a051/453600a051.pdf" target="_blank">Ransomware in Active Directory: A Dataset and Analysis of Early-Stage Behavior</a></h5>
+                                       <p>Early-stage ransomware investigations often hinge on the first minutes after execution, yet most empirical studies aggregate multi-hour traces or analyze single hosts in isolation. This paper presents a reproducible dataset and an analysis of ransomware behavior in Active Directory (AD) environments during these critical stages. Using a controlled AD testbed, we executed over one hundred samples from eight families -
+                                        Akira, BlackMatter, BlackCat, Black Basta, Conti, DarkSide, LockBit and MedusaLocker, and collected approximately 341,000 labeled Windows Event Log entries across both victim and server (Domain Controller) roles.</p>
+                                   </div>
+                               </div>
+                           </div> 
+                           <br>
+                           <br>
+
+                           <!-- Research Paper 5 -->
+
+                            <div class="columns portfolio-item first">
+                               <div class="item-wrap">
+                                   <div class="portfolio-item-meta">
+                                       <h5><a href="https://arxiv.org/abs/2512.00741" target="_blank">Analyzing the Impact of Outliers in Malware Clustering</a></h5>
+                                       <p>
+                                        In malware clustering, outliers may be found while dismissed as noise, while they may in fact represent emerging threats, mislabeled samples, or structurally unique binaries.
+                                        In this study, we systematically analyze the nature of outliers produced by two threat intelligence analytics, namely K-Means Least Trimmed Squares (LTS) and HDBSCAN, across two datasets: MOTIF, a small, well-labeled malware dataset, 
+                                        and a subset (ransomware samples only) of SOREL-20M, a larger, noisier malware corpus. For reasons we will explain, clustering is performed using only DLL imports as feature vectors. Antivirus (AV) labels are used post hoc to help characterize and interpret outliers.
+                                        Our results show that outliers help reveal novel or mislabeled threats. Using MOTIF, HDBSCAN flagged 61.5\% of the samples as noise, while K-Means LTS flagged only 9.9\%. Using SOREL, both methods flagged fewer relative outliers, but still revealed distinct patterns. An analysis of function counts and malware families revealed that outliers often contain either unusually sparse or overly dense API usage. The overlap between K-Means LTS and HDBSCAN outliers remained modest, highlighting the value of combining approaches.
+                                        This work contributes a structured methodology to analyze clustering outliers in malware datasets and demonstrates their potential utility for malware triage, variant discovery, and optimization of the detection pipeline. 
+                                        The results demonstrate how unsupervised clustering outputs can augment threat hunting and Cyber Threat Intelligence (CTI) worksflows.
+
+                                       </p>
+                           <br>
+                           <br>
+
+                           <!-- Research Paper 4 -->
+
+                            <div class="columns portfolio-item first">
+                               <div class="item-wrap">
+                                   <div class="portfolio-item-meta">
+                                       <h5><a href="https://arxiv.org/abs/2512.00741" target="_blank">MASCOT: Analyzing Malware Evolution Through A Well-Curated Source Code Dataset</a></h5>
+                                       <p>In recent years, the explosion of malware and extensive code reuse have formed complex evolutionary connections among malware specimens. The rapid pace of development makes it challenging for existing studies to characterize recent evolutionary trends. 
+                                        In addition, intuitive tools to untangle these intricate connections between malware specimens or 
+                                        categories are urgently needed. This paper introduces a manually-reviewed malware source code dataset containing 6032 specimens. Building on and extending current research from a software engineering perspective, we systematically evaluate the scale, 
+                                        development costs, code quality, as well as security and dependencies of modern malware. We further introduce a multi-view genealogy analysis to clarify malware connections: at an overall view, this analysis quantifies the strength and direction of connections 
+                                        among specimens and categories; at a detailed view, it traces the evolutionary histories of individual specimens. Experimental results indicate that, despite persistent shortcomings in code quality, malware specimens exhibit an increasing complexity and standardization, in step with the development of mainstream software engineering practices. Meanwhile, our genealogy analysis intuitively reveals lineage expansion and evolution driven by code reuse, providing new evidence and tools for understanding the formation and evolution of the malware ecosystem.</p>
+                               </div>
+                           </div> 
+                           <br>
+                           <br>
+
+                           <!-- Research Paper 3 -->
+
+                           <div class="columns portfolio-item first">
+                            <div class="item-wrap">
+                                <div class="portfolio-item-meta">
+                                    <h5><a href="https://ieeexplore.ieee.org/abstract/document/11012104" target="_blank">A Behavioral Analysis of Ransomware in Active Directory: A Case Study of BlackMatter, Conti, LockBit, and Midnight.</a></h5>
+                                    <p>Ransomware continues to be a pervasive cybersecurity threat, particularly in enterprise environments that leverage Active Directory (AD) for centralized management.
+                                        This study focuses on analyzing ransomware behavior by examining Windows Event Logs generated during attacks from four prominent ransomware families: “BlackMatter,” “Conti,”, “LockBit,” and “Midnight”1. We conducted experiments on 20
+                                        ransomware samples (5 per family) within a controlled Proxmox-
+                                        based virtual AD environment to simulate realistic enterprise
+                                        conditions. Our analysis applies n-gram sequence modeling and
+                                        behavioral feature extraction to uncover distinctive event patterns
+                                        and attack paths. The findings reveal consistent, family-specific
+                                        behavioral sequences, such as repetitive service control and
+                                        credential validation events, that are indicative of ransomware
+                                        activity. In addition to offering insight into the operational
+                                        methods of ransomware, we lay the groundwork for automated
+                                        behavior-based detection mechanisms suited for enterprise AD
+                                        environments.</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <br>
+                        <br>               
+
+                           <!-- Research Paper 2 -->
+
+                            <div class="columns portfolio-item first">
+                               <div class="item-wrap">
+                                   <div class="portfolio-item-meta">
+                                       <h5><a href="https://ceur-ws.org/Vol-3920/paper10.pdf" target="_blank">Ransomware Evolution: Unveiling Patterns Using HDBSCAN</a></h5>
+                                       <p>This research presents an innovative approach to enhancing ransomware detection by leveraging Windows
+                                        API calls and PE header information to develop precise signatures capable of identifying ransomware families.
+                                        Our methodology introduces a novel application of hierarchical clustering using the HDBSCAN algorithm,
+                                        in conjunction with the Jaccard similarity metric, to cluster ransomware into discrete families and generate
+                                        corresponding signatures. This technique, to our knowledge, marks a pioneering effort in applying hierarchical
+                                        density-based clustering to over 1.1 million malicious samples, specifically focusing on ransomware and using
+                                        the clusters to automatically generate signatures.
+                                        We show that identifying unique Windows API function patterns within these clusters enables the differenti-
+                                        ation and characterization of various ransomware families. Furthermore, we conducted a case study focusing
+                                        on the distinctive function combinations within prominent ransomware families such as GandCrab, WannaCry,
+                                        Cerber, Gotango, and CryptXXX, unveiling unique behaviors and API function usage patterns. Our scalable
+                                        implementation demonstrates the ability to efficiently cluster large volumes of malicious files and automatically
+                                        generate robust, actionable function signatures for each. Validation of these signatures on an independent
+                                        malware dataset yielded a precision rate of 98.34% and specificity rate of 99.72%, affirming their effectiveness
+                                        in detecting known ransomware families with minimal error. These findings underscore the potential of our
+                                        methodology in bolstering cybersecurity defenses against the evolving landscape of ransomware threats.</p>
+                                   </div>
+                               </div>
+                           </div> 
+                           <br>
+                           <br>
+
+                           <!-- Research Paper 1 -->
+
+                           <div class="columns portfolio-item first">
+                            <div class="item-wrap">
+                                <div class="portfolio-item-meta">
+                                    <h5><a href="https://doi.org/10.1007/978-3-030-91631-2_3" target="_blank">Searching for Selfie in TLS 1.3 with the Cryptographic Protocol Shapes Analyzer</a></h5>
+                                        <p>We analyze the handshake protocol of the Transport Layer Security (TLS) protocol, version 1.3. We address both the full TLS 1.3 handshake (the one round-trip time mode, with signatures for authentication and (elliptic curve) 
+                                        Diffie–Hellman ephemeral ((EC)DHE) key exchange), and the abbreviated resumption/“PSK” mode which uses a pre-shared key for authentication (with optional (EC)DHE key exchange and zero round-trip time key establishment). Our analysis in the reductionist security framework uses a multi-stage key exchange 
+                                        security model, where each of the many session keys derived in a single TLS 1.3 handshake is tagged with various properties (such as unauthenticated versus unilaterally authenticated versus mutually authenticated, whether it is intended to provide forward security, how it is used in the protocol, and whether the key is protected against replay attacks). 
+                                        We show that these TLS 1.3 handshake protocol modes establish session keys with their desired security properties under standard cryptographic assumptions.</p>
+                                </div>
+                            </div>
+                        </div>                    
+                        <br>
+                        <br>
+
+                           <!-- Research Poster 1 -->
+                           <div class="columns portfolio-item">
+                               <div class="item-wrap">
+                                   <a href="posters/MTEM23_Trends_in_malware.pdf" target="_blank">
+                                       <div class="overlay"></div>
+                                       <div class="link-icon"><i class="fa fa-link"></i></div>
+                                   </a>
+                                   <div class="portfolio-item-meta">
+                                       <h5><a href="posters/MTEM23_Trends_in_malware.pdf" target="_blank">Trends in Malware</a></h5>
+                                       <p>We propose the use of clustering to analyse similar and differing features between
+                                        malware labels of the same family across time. This analysis will allow signature-based
+                                        detection methods to check for key differences between existing malware and its variants
+                                        and ultimately identify the variants as modifications of a core malware sample.
+                                        
+                                        The Sophos-ReversingLabs 20 Million dataset(SoReL-20M) is used for this re-
+                                        search. [2] The SoReL-20M is a large-scale dataset consisting of nearly 20 million files
+                                        
+                                        with pre-extracted features, metadata, and scan reports from AV vendors. The SoReL
+                                        dataset is balanced, with roughly half of the files malicious and the other half benign.
+                                        The AV class scanner is used to identify all samples from a given malware samples.
+                                        [3]. We first convert the malware samples to feature vectors in EMBER format. The
+                                        vectors are normalized and PCA is used to reduce dimensionality. We calculate the
+                                        similarities between the malware samples in a family by calculating the Euclidean
+                                        distance between each pair. We then find the minimum spanning tree (MST) of the
+                                        similarity matrix. This produces a sequence connecting the most similar malware
+                                        samples in the family.
+                                        Our primary results showed that the SoReL dataset has major clusters that belonged
+                                        to the Trojan malware family. There were clusters that corresponded to the Ransom
+                                        Trojan and Downloader Trojan malware families. Our future work includes further
+                                        analysis of patterns we might observe in the similarity matrix.</p>
+                                   </div>
+                               </div>
                            </div>
-                       </div>
-                   </div> 
-                   <br>
-                   <br>
-                   <!-- Research Paper 1 -->
+                        <br>
+                        <br>
 
-                   <div class="columns portfolio-item first">
-                    <div class="item-wrap">
-                        <!-- <a href="https://ceur-ws.org/Vol-3920/paper10.pdf" target="_blank"> -->
-                            <!-- <img src="images/post.jpg" alt="Research Paper"> 
-                            <div class="overlay"></div>
-                            <div class="link-icon"><i class="fa fa-link"></i></div>
-                        </a> -->
-                        <div class="portfolio-item-meta">
-                            <h5><a href="https://doi.org/10.1007/978-3-030-91631-2_3" target="_blank">Searching for Selfie in TLS 1.3 with the Cryptographic Protocol Shapes Analyzer</a></h5>
-                                <p>We analyze the handshake protocol of the Transport Layer Security (TLS) protocol, version 1.3. We address both the full TLS 1.3 handshake (the one round-trip time mode, with signatures for authentication and (elliptic curve) 
-                                Diffie–Hellman ephemeral ((EC)DHE) key exchange), and the abbreviated resumption/“PSK” mode which uses a pre-shared key for authentication (with optional (EC)DHE key exchange and zero round-trip time key establishment). Our analysis in the reductionist security framework uses a multi-stage key exchange 
-                                security model, where each of the many session keys derived in a single TLS 1.3 handshake is tagged with various properties (such as unauthenticated versus unilaterally authenticated versus mutually authenticated, whether it is intended to provide forward security, how it is used in the protocol, and whether the key is protected against replay attacks). 
-                                We show that these TLS 1.3 handshake protocol modes establish session keys with their desired security properties under standard cryptographic assumptions.</p>
+                           <!-- Research Poster 2 -->
+                           <div class="columns portfolio-item">
+                            <div class="item-wrap">
+                                <a href="posters/MTEM22_Malware_Antivirus_Scan_Pattern_Mining_via_Tensor_Decomposition-2.pdf" target="_blank">
+                                    <div class="overlay"></div>
+                                    <div class="link-icon"><i class="fa fa-link"></i></div>
+                                </a>
+
+                                <div class="portfolio-item-meta">
+                                    <h5><a href="posters/MTEM22_Malware_Antivirus_Scan_Pattern_Mining_via_Tensor_Decomposition-2.pdf" target="_blank">Malware Antivirus Scan Pattern Mining via Tensor Decomposition</a></h5>
+                                    <p> Accurate labeling is important for detecting malware and building reference datasets
+                                        which can be used for evaluating machine learning (ML) based malware classification
+                                        and clustering approaches. Labels obtained from Anti-Virus (AV) vendors (such as
+                                        Kaspersky, Malwarebytes, and McAfee) are one source of information; however, despite
+                                        ongoing research efforts there is still inconsistency with the labeling across AV vendors
+                                        [7, 5, 9]. AV vendors use differing formats and naming conventions when reporting
+                                        labels of malware samples, and the reported labels between any two vendors can
+                                        disagree. We address this problem in our work utilizing CP-APR, a powerful tensor
+                                        decomposition method for unsupervised ML, to discover the hidden patterns across AV
+                                        vendors in the way they report the malware labels. In comparison to the traditional ML
+                                        methods, tensor decomposition models the multi-dimensional properties of the data
+                                        and produces interpretable results [6]. The higher-dimensional representation of the
+                                        AV scans enables the discovery of multi-faceted and complex details of those scans.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>                    
-                <br>
-                <br>
-                   <!-- Research Poster 1 -->
-                   <div class="columns portfolio-item">
-                       <div class="item-wrap">
-                           <a href="posters/MTEM23_Trends_in_malware.pdf" target="_blank">
-                               <!-- <img src="images/poster2-thumbnail.jpg" alt="Research Poster 2"> -->
-                               <div class="overlay"></div>
-                               <div class="link-icon"><i class="fa fa-link"></i></div>
-                           </a>
-                           <div class="portfolio-item-meta">
-                               <h5><a href="posters/MTEM23_Trends_in_malware.pdf" target="_blank">Trends in Malware</a></h5>
-                               <p>We propose the use of clustering to analyse similar and differing features between
-                                malware labels of the same family across time. This analysis will allow signature-based
-                                detection methods to check for key differences between existing malware and its variants
-                                and ultimately identify the variants as modifications of a core malware sample.
-                                
-                                The Sophos-ReversingLabs 20 Million dataset(SoReL-20M) is used for this re-
-                                search. [2] The SoReL-20M is a large-scale dataset consisting of nearly 20 million files
-                                
-                                with pre-extracted features, metadata, and scan reports from AV vendors. The SoReL
-                                dataset is balanced, with roughly half of the files malicious and the other half benign.
-                                The AV class scanner is used to identify all samples from a given malware samples.
-                                [3]. We first convert the malware samples to feature vectors in EMBER format. The
-                                vectors are normalized and PCA is used to reduce dimensionality. We calculate the
-                                similarities between the malware samples in a family by calculating the Euclidean
-                                distance between each pair. We then find the minimum spanning tree (MST) of the
-                                similarity matrix. This produces a sequence connecting the most similar malware
-                                samples in the family.
-                                Our primary results showed that the SoReL dataset has major clusters that belonged
-                                to the Trojan malware family. There were clusters that corresponded to the Ransom
-                                Trojan and Downloader Trojan malware families. Our future work includes further
-                                analysis of patterns we might observe in the similarity matrix.</p>
-                           </div>
+                        <br>
+                        <br>
+
                        </div>
-                   </div>
-                <br>
-                <br>
-                   <!-- Research Poster 2 -->
-                   <div class="columns portfolio-item">
-                    <div class="item-wrap">
-                        <a href="posters/MTEM22_Malware_Antivirus_Scan_Pattern_Mining_via_Tensor_Decomposition-2.pdf" target="_blank">
-                            <!-- <img src="images/poster2-thumbnail.jpg" alt="Research Poster 2"> -->
-                            <div class="overlay"></div>
-                            <div class="link-icon"><i class="fa fa-link"></i></div>
-                        </a>
-
-                        <!-- Research Poster 3 -->
-                        <div class="portfolio-item-meta">
-                            <h5><a href="posters/MTEM22_Malware_Antivirus_Scan_Pattern_Mining_via_Tensor_Decomposition-2.pdf" target="_blank">Malware Antivirus Scan Pattern Mining via Tensor Decomposition</a></h5>
-                            <p> Accurate labeling is important for detecting malware and building reference datasets
-                                which can be used for evaluating machine learning (ML) based malware classification
-                                and clustering approaches. Labels obtained from Anti-Virus (AV) vendors (such as
-                                Kaspersky, Malwarebytes, and McAfee) are one source of information; however, despite
-                                ongoing research efforts there is still inconsistency with the labeling across AV vendors
-                                [7, 5, 9]. AV vendors use differing formats and naming conventions when reporting
-                                labels of malware samples, and the reported labels between any two vendors can
-                                disagree. We address this problem in our work utilizing CP-APR, a powerful tensor
-                                decomposition method for unsupervised ML, to discover the hidden patterns across AV
-                                vendors in the way they report the malware labels. In comparison to the traditional ML
-                                methods, tensor decomposition models the multi-dimensional properties of the data
-                                and produces interpretable results [6]. The higher-dimensional representation of the
-                                AV scans enables the discovery of multi-faceted and complex details of those scans.</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                   
-               </div>
-            </div> <!-- primary end -->
-
-              <!-- TAB 2 -->
-  <div class="tab-panel panel-talks">
-    <section class="entry cf">
-      <div class="four columns entry-details">
-        <p class="lead">
-          A selection of invited talks, workshops, and community sessions.
-        </p>
-      </div>
-
-      <div class="eight columns portfolio-list">
-        <div class="bgrid-halves cf">
-
-        <div class="columns portfolio-item first">
-            <div class="item-wrap">
-              <div class="portfolio-item-meta">
-                <h5>The PhD Dilemma: Prestige, Cost, and Payoff in Today’s Age</h5>
-                <p>
-                  Speaker · Lightning Talk accepted for WiCyS 2026<br>
-                  <strong>Venue:</strong> WiCyS 2026 · <strong>Date:</strong> March 2026
-                  The decision to pursue a PhD in cybersecurity or computer science is often framed as the pinnacle of academic achievement, but the realities of doctoral study are rarely discussed openly. While a PhD can lead to opportunities in research, academia, and thought leadership, it also requires navigating challenges that are not always obvious at the start.
-This lightning talk will take a candid look at the PhD experience and highlight what aspiring doctoral students should be prepared for before committing. Drawing from personal experience, it will touch on the dependence on research funding and how it shapes the direction of your work, the intense focus required to stay motivated through years of study, and the growing role of artificial intelligence in research, raising questions about how doctoral training might evolve. The talk will also contrast the relative benefits of a Master’s degree, which often provides faster and more flexible returns.
-Attendees who are considering doctoral study will leave with an honest perspective on what to expect, what challenges to prepare for, and how to decide if this path aligns with their long term goals.
-
-                </p>
-              </div>
+                    </div> <!-- primary end -->
+                </section> <!-- end section -->
             </div>
-          </div>
 
-          <div class="columns portfolio-item first">
-            <div class="item-wrap">
-              <div class="portfolio-item-meta">
-                <h5>Effectively Integrating AI into Cybersecurity Practitioners’ Toolbox</h5>
-                <p>
-                  Speaker · Hands-on workshop on GenAI workflows for cybersecurity practitioners.<br>
-                  <strong>Venue:</strong> WiCyS 2025 · <strong>Date:</strong> April 2025
-                </p>
-              </div>
+            <!-- =========================
+                 TAB 2: Talks & Workshops
+                 (Uses the SAME item format you already used)
+            ========================== -->
+            <div class="tab-panel panel-talks">
+                <section class="entry cf">
+                    <div class="four columns entry-details">
+                        <p class="lead">
+                            A selection of invited talks, workshops, and community sessions.
+                        </p>
+                    </div>
+
+                    <div class="eight columns portfolio-list">
+                        <div class="bgrid-halves cf">
+
+                            <div class="columns portfolio-item first">
+                                <div class="item-wrap">
+                                    <div class="portfolio-item-meta">
+                                        <h5>The PhD Dilemma: Prestige, Cost, and Payoff in Today’s Age</h5>
+                                        <p>
+                                            Speaker · Lightning Talk accepted for WiCyS 2026<br>
+                                            <strong>Venue:</strong> WiCyS 2026 · <strong>Date:</strong> March 2026<br><br>
+                                            The decision to pursue a PhD in cybersecurity or computer science is often framed as the pinnacle of academic achievement, but the realities of doctoral study are rarely discussed openly. While a PhD can lead to opportunities in research, academia, and thought leadership, it also requires navigating challenges that are not always obvious at the start.
+                                            This lightning talk will take a candid look at the PhD experience and highlight what aspiring doctoral students should be prepared for before committing. Drawing from personal experience, it will touch on the dependence on research funding and how it shapes the direction of your work, the intense focus required to stay motivated through years of study, and the growing role of artificial intelligence in research, raising questions about how doctoral training might evolve. The talk will also contrast the relative benefits of a Master’s degree, which often provides faster and more flexible returns.
+                                            Attendees who are considering doctoral study will leave with an honest perspective on what to expect, what challenges to prepare for, and how to decide if this path aligns with their long term goals.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br><br>
+
+                            <div class="columns portfolio-item first">
+                                <div class="item-wrap">
+                                    <div class="portfolio-item-meta">
+                                        <h5>Effectively Integrating AI into Cybersecurity Practitioners’ Toolbox</h5>
+                                        <p>
+                                            Speaker · Hands-on workshop on GenAI workflows for cybersecurity practitioners.<br>
+                                            <strong>Venue:</strong> WiCyS 2025 · <strong>Date:</strong> April 2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br><br>
+
+                            <div class="columns portfolio-item first">
+                                <div class="item-wrap">
+                                    <div class="portfolio-item-meta">
+                                        <h5>From Assistance to Dependence: A Graduate Teaching Assistant’s Take on AI in Education</h5>
+                                        <p>
+                                            Bhandary, P.<br>
+                                            <strong>CODEBOT Workshop 2025.</strong> (Position Paper, Oral Presentation)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br><br>
+
+                            <div class="columns portfolio-item first">
+                                <div class="item-wrap">
+                                    <div class="portfolio-item-meta">
+                                        <h5>AI-Driven Ransomware Tactics</h5>
+                                        <p>
+                                            Bhandary, P., Nicholas, C.<br>
+                                            <strong>CODEBOT Workshop 2025.</strong> (Position Paper, Oral Presentation)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
             </div>
-          </div>
 
-                <!-- Talk 1 -->
-      <div class="columns portfolio-item first">
-        <div class="item-wrap">
-          <div class="portfolio-item-meta">
-            <h5>
-              From Assistance to Dependence: A Graduate Teaching Assistant’s Take on AI in Education
-            </h5>
-            <p>
-              <strong>Prajna Bhandary</strong><br>
-              <em>CODEBOT Workshop 2025</em><br>
-              Position Paper · Oral Presentation
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <br><br>
-
-      <!-- Talk 2 -->
-      <div class="columns portfolio-item first">
-        <div class="item-wrap">
-          <div class="portfolio-item-meta">
-            <h5>
-              AI-Driven Ransomware Tactics
-            </h5>
-            <p>
-              <strong>Prajna Bhandary</strong>, Charles Nicholas<br>
-              <em>CODEBOT Workshop 2025</em><br>
-              Position Paper · Oral Presentation
-            </p>
-          </div>
-        </div>
-      </div>
-
-        </div>
-      </div>
-    </section>
-  </div>
-
-  
-        </section> <!-- end section -->
+        </section>
     </main>
 
     <footer>
@@ -349,4 +334,3 @@ Attendees who are considering doctoral study will leave with an honest perspecti
     </footer>
 </body>
 </html>
-
