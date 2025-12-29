@@ -1,46 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Prajna Bhandary</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1><a href="index.html">Prajna Bhandary</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="Bhandary_Prajna_Resume.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<section class="tabs" aria-label="Research sections">
 
-    <main class="container">
-        <section id="page-title">
-            <div class="row">
-                <div class="ten columns centered text-center">
-                    <h2>My Research</h2>
-                    <p>Explore the research work and posters I have presented.</p>
-                </div>
-            </div>
-        </section>
+  <!-- Radio controls -->
+  <input type="radio" name="research-tabs" id="tab-publications" checked>
+  <input type="radio" name="research-tabs" id="tab-talks">
 
-        <section class="entry cf">
-            <div id="secondary" class="four columns entry-details">
-               <p class="lead">Here are some of the research posters I have presented in various conferences and research symposiums. Click on the posters to view them in full size or download the PDF version.</p>
-            </div>
+  <!-- Tab labels -->
+  <div class="tablist">
+    <label for="tab-publications" class="tab-button">
+      Publications & Posters
+    </label>
+    <label for="tab-talks" class="tab-button">
+      Talks & Workshops
+    </label>
+  </div>
 
-            <div id="primary" class="eight columns portfolio-list">
-               <div id="portfolio-wrapper" class="bgrid-halves cf">
-
-                    <!-- Research Paper 4 -->
+  <!-- TAB 1 -->
+  <div class="tab-panel panel-publications">
+                    <!-- Research Paper 6 -->
 
                     <div class="columns portfolio-item first">
                        <div class="item-wrap">
@@ -50,7 +26,7 @@
                                <div class="link-icon"><i class="fa fa-link"></i></div>
                            </a> -->
                            <div class="portfolio-item-meta">
-                               <h5><a href="https://conferences.computer.org/acsacpub25/pdfs/ACSACW2025-1bIy0fj3zhdiLigxu9UCLW/453600a051/453600a051.pdf" target="_blank">Ransomware Evolution: Unveiling Patterns Using HDBSCAN</a></h5>
+                               <h5><a href="https://conferences.computer.org/acsacpub25/pdfs/ACSACW2025-1bIy0fj3zhdiLigxu9UCLW/453600a051/453600a051.pdf" target="_blank">Ransomware in Active Directory: A Dataset and Analysis of Early-Stage Behavior</a></h5>
                                <p>Early-stage ransomware investigations often hinge on the first minutes after execution, yet most empirical studies aggregate multi-hour traces or analyze single hosts in isolation. This paper presents a reproducible dataset and an analysis of ransomware behavior in Active Directory (AD) environments during these critical stages. Using a controlled AD testbed, we executed over one hundred samples from eight families -
                                 Akira, BlackMatter, BlackCat, Black Basta, Conti, DarkSide, LockBit and MedusaLocker, and collected approximately 341,000 labeled Windows Event Log entries across both victim and server (Domain Controller) roles.</p>
                            </div>
@@ -69,7 +45,30 @@
                                <div class="link-icon"><i class="fa fa-link"></i></div>
                            </a> -->
                            <div class="portfolio-item-meta">
-                               <h5><a href="https://arxiv.org/abs/2512.00741" target="_blank">Ransomware Evolution: Unveiling Patterns Using HDBSCAN</a></h5>
+                               <h5><a href="https://arxiv.org/abs/2512.00741" target="_blank">Analyzing the Impact of Outliers in Malware Clustering</a></h5>
+                               <p>
+                                In malware clustering, outliers may be found while dismissed as noise, while they may in fact represent emerging threats, mislabeled samples, or structurally unique binaries.
+                                In this study, we systematically analyze the nature of outliers produced by two threat intelligence analytics, namely K-Means Least Trimmed Squares (LTS) and HDBSCAN, across two datasets: MOTIF, a small, well-labeled malware dataset, 
+                                and a subset (ransomware samples only) of SOREL-20M, a larger, noisier malware corpus. For reasons we will explain, clustering is performed using only DLL imports as feature vectors. Antivirus (AV) labels are used post hoc to help characterize and interpret outliers.
+                                Our results show that outliers help reveal novel or mislabeled threats. Using MOTIF, HDBSCAN flagged 61.5\% of the samples as noise, while K-Means LTS flagged only 9.9\%. Using SOREL, both methods flagged fewer relative outliers, but still revealed distinct patterns. An analysis of function counts and malware families revealed that outliers often contain either unusually sparse or overly dense API usage. The overlap between K-Means LTS and HDBSCAN outliers remained modest, highlighting the value of combining approaches.
+                                This work contributes a structured methodology to analyze clustering outliers in malware datasets and demonstrates their potential utility for malware triage, variant discovery, and optimization of the detection pipeline. 
+                                The results demonstrate how unsupervised clustering outputs can augment threat hunting and Cyber Threat Intelligence (CTI) worksflows.
+
+                               </p>
+                   <br>
+                   <br>
+
+                   <!-- Research Paper 4 -->
+
+                    <div class="columns portfolio-item first">
+                       <div class="item-wrap">
+                           <!-- <a href="https://ceur-ws.org/Vol-3920/paper10.pdf" target="_blank"> -->
+                               <!-- <img src="images/post.jpg" alt="Research Paper"> 
+                               <div class="overlay"></div>
+                               <div class="link-icon"><i class="fa fa-link"></i></div>
+                           </a> -->
+                           <div class="portfolio-item-meta">
+                               <h5><a href="https://arxiv.org/abs/2512.00741" target="_blank">MASCOT: Analyzing Malware Evolution Through A Well-Curated Source Code Dataset</a></h5>
                                <p>In recent years, the explosion of malware and extensive code reuse have formed complex evolutionary connections among malware specimens. The rapid pace of development makes it challenging for existing studies to characterize recent evolutionary trends. 
                                 In addition, intuitive tools to untangle these intricate connections between malware specimens or 
                                 categories are urgently needed. This paper introduces a manually-reviewed malware source code dataset containing 6032 specimens. Building on and extending current research from a software engineering perspective, we systematically evaluate the scale, 
@@ -229,16 +228,85 @@
                 </div>
                 <br>
                 <br>
-                   
-               </div>
-            </div> <!-- primary end -->
-        </section> <!-- end section -->
-    </main>
+  </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Prajna Bhandary. All rights reserved.</p>
+  <!-- TAB 2 -->
+  <div class="tab-panel panel-talks">
+    <section class="entry cf">
+      <div class="four columns entry-details">
+        <p class="lead">
+          A selection of invited talks, workshops, and community sessions.
+        </p>
+      </div>
+
+      <div class="eight columns portfolio-list">
+        <div class="bgrid-halves cf">
+
+        <div class="columns portfolio-item first">
+            <div class="item-wrap">
+              <div class="portfolio-item-meta">
+                <h5>The PhD Dilemma: Prestige, Cost, and Payoff in Today’s Age</h5>
+                <p>
+                  Speaker · Lightning Talk accepted for WiCyS 2026<br>
+                  <strong>Venue:</strong> WiCyS 2026 · <strong>Date:</strong> March 2026
+                  The decision to pursue a PhD in cybersecurity or computer science is often framed as the pinnacle of academic achievement, but the realities of doctoral study are rarely discussed openly. While a PhD can lead to opportunities in research, academia, and thought leadership, it also requires navigating challenges that are not always obvious at the start.
+This lightning talk will take a candid look at the PhD experience and highlight what aspiring doctoral students should be prepared for before committing. Drawing from personal experience, it will touch on the dependence on research funding and how it shapes the direction of your work, the intense focus required to stay motivated through years of study, and the growing role of artificial intelligence in research, raising questions about how doctoral training might evolve. The talk will also contrast the relative benefits of a Master’s degree, which often provides faster and more flexible returns.
+Attendees who are considering doctoral study will leave with an honest perspective on what to expect, what challenges to prepare for, and how to decide if this path aligns with their long term goals.
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns portfolio-item first">
+            <div class="item-wrap">
+              <div class="portfolio-item-meta">
+                <h5>Effectively Integrating AI into Cybersecurity Practitioners’ Toolbox</h5>
+                <p>
+                  Speaker · Hands-on workshop on GenAI workflows for cybersecurity practitioners.<br>
+                  <strong>Venue:</strong> WiCyS 2025 · <strong>Date:</strong> April 2025
+                </p>
+              </div>
+            </div>
+          </div>
+
+                <!-- Talk 1 -->
+      <div class="columns portfolio-item first">
+        <div class="item-wrap">
+          <div class="portfolio-item-meta">
+            <h5>
+              From Assistance to Dependence: A Graduate Teaching Assistant’s Take on AI in Education
+            </h5>
+            <p>
+              <strong>Prajna Bhandary</strong><br>
+              <em>CODEBOT Workshop 2025</em><br>
+              Position Paper · Oral Presentation
+            </p>
+          </div>
         </div>
-    </footer>
-</body>
-</html>
+      </div>
+
+      <br><br>
+
+      <!-- Talk 2 -->
+      <div class="columns portfolio-item first">
+        <div class="item-wrap">
+          <div class="portfolio-item-meta">
+            <h5>
+              AI-Driven Ransomware Tactics
+            </h5>
+            <p>
+              <strong>Prajna Bhandary</strong>, Charles Nicholas<br>
+              <em>CODEBOT Workshop 2025</em><br>
+              Position Paper · Oral Presentation
+            </p>
+          </div>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+</section>
